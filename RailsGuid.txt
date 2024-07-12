@@ -1,0 +1,26 @@
+M-Model (Representation of database)
+
+V-view (html user interact)
+
+C-controller(navigation)
+  rails g model Article title:string body:text
+  rails db:migrate
+  rails c
+  
+  
+  a=Article.all
+  a
+  []
+  a=Article.new(title:'First blog',body:'Bodyof first article')
+  
+  a.save()
+  
+  Article.all
+  Article.first
+  Article.last
+  a=Article.all
+  b=Article.find(2)
+  b.title="new update title"
+  b.save()
+  b.delete
+  Article[2]
